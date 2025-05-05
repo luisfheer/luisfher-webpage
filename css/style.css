@@ -1,3 +1,7 @@
+
+
+/* CONFIG GLOBAL */
+
 * { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
@@ -8,6 +12,8 @@ body{
     font-family: 'Alegreya', serif;
 }
 
+/* HEADER */
+
 .header{
     background-image: url(../images/fondo_galleta_oreo.jpg);
     background-position: center center;
@@ -17,41 +23,46 @@ body{
 
 }
 
+/* CONTENEDOR GENERAL CENTRADO */
 
-.container{
-    width: 1140px;
+.contenedor {
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 12px;
 }
+
+/* BARRA DE NAVEGACIÓN */
+
 .navbar{
     position: fixed;
     top: 0;
     z-index: 300;
     width: inherit;
 }
-div ul.navbar-section{
+div ul.seccion-navbar{
     display: block;
     list-style: none;
     height: 100%;
 }
-div ul.navbar-section li{
+div ul.seccion-navbar li{
     display: inline; 
     padding: 25px 15px;
     
     /* position: relative; */
 }
-div ul.navbar-section li:hover{
+div ul.seccion-navbar li:hover{
     border-top: 5px solid #8e7754;
     transition: border 0.2s ease;
 }
-div ul.navbar-section li a{
+div ul.seccion-navbar li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 100;
 }
 
-div ul.navbar-section li a:hover{
+div ul.seccion-navbar li a:hover{
     color: #8e7754;
     transition:color 0.5s ease;
     
@@ -59,19 +70,16 @@ div ul.navbar-section li a:hover{
 .active{
     border-top: 5px solid #8e7754;
 }
-/* div ul.navbar-section li:first-of-type::before{
-    content: '';
-    height:13px;
-    width: 100%;
-    background-color: #ac8a58;
-    position: absolute;
-    top: 0;
-    right: 0;
-}  */
+
+/* LOGO DE LA BARRA DE NAVEGACIÓN */
+
 div.navbar img{
     height: 90px;
     padding:5px
 }
+
+/* SECCIÓN DE BIENVENIDA - DESCRIPCIÓN */
+
 .desc{
     width: 700px;
     margin:  auto;
@@ -90,6 +98,9 @@ div.navbar img{
     font-size: 22px;
     color: #fff;
 }
+
+/* BOTONES PRINCIPALES */
+
 .btn{
     padding: 15px 28px;
     font-weight: 200;
@@ -102,25 +113,28 @@ div.navbar img{
     
 }
 
-.btn-learn{
+.btn-ver_mas{
     background-color: #8e7754;
     border: 2px solid #8e7754;
 }
-.btn-learn:hover{
+.btn-ver_mas:hover{
     background-color:#fff ;
     border: 2px solid #fff;
     color: #000;
     transition:color 0.5s ease, background-color 0.5s ease,border 0.5s ease;
 }
-.btn-contact{
+.btn-contacto{
     background-color: transparent;
     border: 2px solid #fff;
 }
-.btn-contact:hover{
+.btn-contacto:hover{
     background-color: #fff;
     color: #000;
     transition:color 0.5s ease, background-color 0.5s ease,border 0.5s ease;
 }
+
+/* FLECHA DEL SCROLL HACIA ABAJO */
+
 .scroll-down-out{
     margin: 20px auto;
     width: 30px;
@@ -142,94 +156,100 @@ div.navbar img{
     0%   {top:0px;background-color: #fff;}
     100% {top:20px;opacity: 0;}
 }
-/* sección de quienes somos */
-.section{
+
+/* SECCIÓN QUIENES SOMOS */
+
+.seccion{
     margin: auto;
     margin-top: 40px;
 }
 
-.section img.img-section{
+.seccion img.img-seccion{
     width: 50%;
     vertical-align: top;
 }
-.description{
+.descripcion{
     width: 49%;
     padding:0px 50px;
     display: inline-block;
 }
 
-.description p.desc1{
+.descripcion p.desc1{
     padding-bottom: 20px;
 }
-.description ul li img{
+.descripcion ul li img{
     border: 0.5px solid #8e7754;
 }
 
-.our-location-section{
+.seccion-donde_encontrarnos{
     background-color: #f8f8f8;
 }
 
-/* sección de nuestra bakery */
+/* SECCIÓN NUESTROS PRODUCTOS */
 
-.heading-section{
+.heading-seccion{
     text-align: center;
 }
 
-.heading-section p{
+.heading-seccion p{
     color: #686868;
     font-size: 18px;
 }
-.baking-section{
+.baking-seccion{
     width: 33.3%;
     text-align: center;
     padding: 20px;
 }
-.baking-section .image-box img{
+.baking-seccion .image-box img{
     width: 100%;
 }
-.baking-section .image-box h3{
+.baking-seccion .image-box h3{
     font-size: 25px;
     font-weight: 100;
 }
-.baking-section .image-box p{
+.baking-seccion .image-box p{
     color: #686868;
     font-size: 18px;
 }
-/* sección del mapa */
-.map{
+
+/* SECCIÓN CONTÁCTANOS */
+
+.contactanos{
     background-color: #f8f8f8;
     padding-block: 30px;
 }
-.section-details{
+.seccion-details{
     width: 50%;
     padding-inline: 40px;
 }
-.map ul li img{
+.contactanos ul li img{
     background-color: #8e7754;
     border-radius: 15px;
 }
-.section-map{
+.seccion-contactanos{
     width: 50%;
 }
 
-.map-iframe{
+.contactanos-iframe{
     width: 100%;
     height: 500px;
 }
-/* footer */
+
+/* FOOTER */
+
 .footer{
     background-color: #403d38;
 }
-.footer-section{
+.footer-seccion{
     width: 25%;
     padding: 7px;
 }
-.footer-section h4{
+.footer-seccion h4{
     color: #fff;
     font-size: 18px;
     font-weight: 100;
 }
-.footer-section .first-desc{
+.footer-seccion .first-desc{
     margin-top: 10px;
     padding-top: 20px;
 }
@@ -238,7 +258,9 @@ div.navbar img{
     background-repeat: no-repeat;
     background-position: center center;
 }
-/* copyright */
+
+/* COPYRIGHT Y REDES SOCIALES */
+
 .copyright{
     background-color: #1b1b1b;
     padding:30px
@@ -267,6 +289,9 @@ div.navbar img{
 .content ul li img.tiktok:hover{
     background-color: #000;
 }
+
+/* BOTÓN DE VOLVER ARRIBA */
+
 #myBtn{
     text-align: center;
     display: none;
@@ -292,7 +317,8 @@ div.navbar img{
     100% {bottom:20px;}
 }
 
-/* Ajustes generales del css */
+/* AJUSTES GENERALES */
+
 .float-left{
     float: left;
 }
@@ -359,7 +385,8 @@ div.navbar img{
     border: none;
 }
 
-/* menú desplegable */
+/* MENÚ DESPLEGABLE */
+
 .test-drop {
     display: inline;
     position: relative;
@@ -385,5 +412,9 @@ div.navbar img{
     z-index: 1;
   }
 
-  .test-drop:hover .dropdown-content,.dropdown-content a {display: block;}
+  /* MOSTRAR MENÚ (BLOG) AL PASAR EL MOUSE */
+
+  .test-drop:hover .dropdown-content {
+    display: block;
+}
   .dropdown-content a:hover {background-color: #8e7754;color: #e0dcd2 !important;padding-left: 12px;}
