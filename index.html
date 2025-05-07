@@ -14,12 +14,12 @@
                 <div class="contenedor">
                     <img src="./images/NishaLogoNoBGNoContact.png" alt="logo" class="float-left" />
                     <ul class="seccion-navbar float-right">
-                        <li class="active"><a href="#">Inicio</a></li>
-                        <li><a href="#" class="hd1">Nosotros</a></li>
-                        <li><a href="#" class="hd2">Menú</a></li>
-                        <li><a href="#" class="hd3">PQRS</a></li>
+                        <li class="active"><a href="#top">Inicio</a></li>
+                        <li><a href="#Nosotros" class="hd1">Nosotros</a></li>
+                        <li><a href="#Menu" class="hd2">Menú</a></li>
+                        <li><a href="#DondeEncontrarnos" class="hd3">PQRS</a></li>
                         <li><div class="test-drop">
-                                <a href="#" class="hd4" >Blog</a>
+                                <a href="#footer" class="hd4" >Blog</a>
                                 <div class="dropdown-content">
                                     <a href="#">Clientes</a>
                                     <a href="#">Novedades</a>
@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                             </li>
-                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#Contactanos">Contáctanos</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,8 +39,10 @@
                     <p>Bienvenidos a </p>
                     <h1>Nisha Bakery</h1>
                     <p>Descubre la dulzura en cada bocado. Repostería hecha con pasión y el toque artesanal que nos hace únicos.</p>
-                    <input type="submit" value="Ver Más" class="btn-ver_mas btn" />
-                    <input type="submit" value="Contáctanos" class="btn-contacto btn" />
+                    <input type="submit" value="Ver Más" class="btn-ver_mas btn" 
+                    onclick="document.getElementById('Nosotros').scrollIntoView({ behavior: 'smooth' });"/>
+                    <input type="submit" value="Contáctanos" class="btn-contacto btn" 
+                    onclick="document.getElementById('Contactanos').scrollIntoView({ behavior: 'smooth' });">
                     <a href="#test">
                         <div class="scroll-down-out">
                             <div class="scroll-down-in"></div>
@@ -52,7 +54,7 @@
     </div>
     <div class="seccion contenedor primera-seccion" id="test2">
         <img src="./images/TiposDeGalletas3.jpg" alt="imagen quienes somos" class="img-seccion" height="680" width="250" style="border-radius: 15px" />
-        <div class="descripcion">
+        <div class="descripcion" id="Nosotros">
             <h2 class="header-ds">¿Quienes Somos?</h2>
             <p class="paragraph-ds">En Nisha Bakery nos dedicamos a la creación de productos de repostería artesanal, elaborados con recetas propias y una gran pasión por lo que hacemos. Nacimos hace dos años con el objetivo de ofrecer sabores auténticos y de calidad, destacándonos especialmente por nuestras galletas, que rápidamente se han convertido en nuestra especialidad.
 
@@ -72,7 +74,7 @@
         </div>
         <div class="clear-fix"></div>
     </div>
-    <div class="seccion-donde_encontrarnos">
+    <div class="seccion-donde_encontrarnos" id="DondeEncontrarnos">
         <div class="seccion contenedor">
             <div class="descripcion">
                 <h2 class="header-ds">¿Donde Puedes Encontrarnos?</h2>
@@ -86,7 +88,7 @@
             <div class="clear-fix"></div>
         </div>
     </div>
-    <div class="contenedor">
+    <div class="contenedor" id="Menu">
         <div class="heading-seccion">
             <h2 class="header-ds">Nuestros Productos</h2>
             <p>Cada uno de nuestros productos es elaborado de manera artesanal, sin prisa y con mucho cariño, para garantizar la mejor calidad en cada pedido. ¡Descúbrelos!</p>
@@ -114,7 +116,7 @@
         </div>
         <div class="clear-fix"></div>
     </div>
-    <div class="contactanos">
+    <div class="contactanos" id="Contactanos">
         <div id="test" class="contenedor" >
             <div class="seccion-details float-left">
                 <h2 class="header-ds">Contáctanos</h2>
@@ -138,7 +140,7 @@
             <div class="clear-fix"></div>
         </div>
     </div>
-    <div  class="footer">
+    <div  class="footer" id="footer">
         <div class="contenedor">
             <div class="footer-seccion float-left">
                 <h4>Sobre Nisha Bakery</h4>
