@@ -15,7 +15,7 @@ body{
 /* HEADER */
 
 .header{
-    background-image: url(../images/fondo_galleta_oreo.jpg);
+    /* background-image: url(../images/fondo_galleta_oreo.jpg); */
     background-position: center center;
     width: 100%;
     height: 100vh;
@@ -418,3 +418,89 @@ div.navbar img{
     display: block;
 }
   .dropdown-content a:hover {background-color: #8e7754;color: #e0dcd2 !important;padding-left: 12px;}
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* SLIDER CON FLECHAS */
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+    display: block;
+    background-color: transparent;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    transition: 0.3s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Asegura que el contenido del header esté encima del slider */
+.header > .navbar,
+.header > .contenedor,
+.header > .clear-fix {
+    position: relative;
+    z-index: 2;
+}
